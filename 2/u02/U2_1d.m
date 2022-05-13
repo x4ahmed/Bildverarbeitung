@@ -23,7 +23,7 @@ newImg(rowStart + t_shift(1,1):rowEnd + t_shift(1,1), colStart + t_shift(1,2):co
 img_fft = fft2(newImg);
 
 % fftshift anwenden
-img_fft_shifted = fftshift(newImg);
+img_fft_shifted = fftshift(img_fft);
 
 % amplitudenbild
 ampl = abs(img_fft_shifted);
